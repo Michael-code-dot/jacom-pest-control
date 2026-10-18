@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Jacom Pest Control – Mombasa</title>
+<meta name="description" content="Residential and commercial pest control in Mombasa. Termites, bedbugs, cockroaches, mosquitoes, bats and rodents. Free quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--s1:#0A0C0C;--s2:#101413;--ink:#F4F7F6;--muted:#93A3A1;--line:rgba(255,255,255,.1);--gold:#34F5A0;--gold2:#1FC8D9;--teal:#A78BFA;--on:#04140D;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth;background:#000}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#000;z-index:50}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;margin:0;line-height:1.05;letter-spacing:-.025em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px;position:relative}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(0,0,0,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:22px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font:800 19px "Bricolage Grotesque",sans-serif;text-decoration:none;margin-right:auto}
+.logo i{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--gold2));display:grid;place-items:center;box-shadow:0 0 22px rgba(52,245,160,.55)}
+nav{display:flex;gap:26px;font-size:15px;color:var(--muted)}
+nav a{text-decoration:none}nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:12px;font:600 16px Figtree,sans-serif;text-decoration:none;border:0;cursor:pointer;min-height:48px}
+.btn.y{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--on);box-shadow:0 0 26px rgba(40,220,190,.45),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn.y:hover{box-shadow:0 0 40px rgba(40,220,190,.75),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn.o{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.04)}
+.btn.o:hover{border-color:var(--teal);box-shadow:0 0 22px rgba(167,139,250,.35)}
+header .btn{padding:8px 18px;min-height:40px;font-size:15px}
+.hero{position:relative;padding:64px 0 0;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(620px 420px at 88% 8%,rgba(52,245,160,.24),transparent 70%),radial-gradient(520px 380px at 0% 100%,rgba(167,139,250,.16),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start;padding-bottom:70px}
+.hero h1{font-size:clamp(42px,7vw,78px);font-weight:800;max-width:11ch;text-shadow:0 0 50px rgba(255,255,255,.18)}
+.lead{font-size:19px;max-width:46ch;margin:22px 0 30px;color:#B9C7C5}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 24px;margin:32px 0 0;padding:0;list-style:none;color:var(--muted);font-size:15px}
+.facts li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 12px var(--teal);margin-right:9px}
+.card{border:1px solid transparent;border-radius:22px;padding:28px;background:linear-gradient(#050707,#050707) padding-box,linear-gradient(140deg,var(--gold),rgba(52,245,160,0) 38%,rgba(167,139,250,0) 62%,var(--teal)) border-box;box-shadow:0 0 60px rgba(52,245,160,.13),0 30px 80px rgba(0,0,0,.8)}
+.card h2{font-size:28px;margin-bottom:6px}
+.card .sm{margin:0 0 14px;color:var(--muted);font-size:15px}
+label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px;color:#CBD7D5}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:#000;color:var(--ink);font:inherit;font-size:16px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(52,245,160,.22)}
+textarea{min-height:80px;resize:vertical}
+.card .btn{width:100%;margin-top:18px}
+.ok{margin-top:16px;padding:16px;border-radius:14px;border:1px solid rgba(167,139,250,.5);background:rgba(167,139,250,.08);box-shadow:0 0 28px rgba(167,139,250,.18)}
+.ok[hidden]{display:none}
+.ok b{display:block;margin-bottom:4px}
+.ok .btn{margin-top:12px}
+.alt{font-size:14px;color:var(--muted);margin:12px 0 0;text-align:center}
+.tape-wrap{overflow:hidden;padding:14px 0 30px}
+.tape{background:linear-gradient(90deg,var(--gold),var(--gold2));color:var(--on);transform:rotate(-1.5deg);margin:0 -30px;padding:13px 0;font:800 18px "Bricolage Grotesque",sans-serif;white-space:nowrap;box-shadow:0 0 50px rgba(40,220,190,.5);overflow:hidden}
+.track{display:inline-block;animation:slide 32s linear infinite}
+.track span{display:inline-block;padding:0 22px}
+.track span::after{content:"";display:inline-block;width:9px;height:9px;margin-left:44px;background:var(--on);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:84px 0}
+.t{font-size:clamp(32px,5vw,52px);font-weight:800;max-width:18ch}
+.sub{color:var(--muted);max-width:56ch;margin:16px 0 0}
+.tabs{display:inline-flex;background:var(--s2);padding:4px;border-radius:13px;margin:30px 0 24px;gap:4px;border:1px solid var(--line)}
+.tabs button{border:0;background:transparent;color:var(--muted);padding:10px 20px;border-radius:10px;font:600 15px Figtree,sans-serif;cursor:pointer;min-height:42px}
+.tabs button[aria-pressed="true"]{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--on);box-shadow:0 0 18px rgba(40,220,190,.45)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.svc{background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:left;color:var(--ink);font:inherit;cursor:pointer;display:flex;flex-direction:column;gap:9px;transition:border-color .2s,box-shadow .2s}
+.svc:hover{border-color:var(--gold);box-shadow:0 0 34px rgba(52,245,160,.22)}
+.ic{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:26px;background:radial-gradient(circle,rgba(52,245,160,.22),rgba(52,245,160,0) 72%);border:1px solid rgba(52,245,160,.4);margin-bottom:6px}
+.svc h3{font-size:22px}
+.svc p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.svc b{font-size:14px;color:var(--gold)}
+.band{background:var(--s1);border-block:1px solid var(--line)}
+.sectors{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:32px}
+.sec{background:#000;border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:14px;padding:20px;font:700 20px "Bricolage Grotesque",sans-serif;box-shadow:0 -10px 30px -18px var(--teal)}
+.sec small{display:block;font:400 14px Figtree,sans-serif;color:var(--muted);margin-top:5px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:14px}
+.steps li{counter-increment:s;background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:18px 20px 18px 68px;position:relative;color:var(--muted)}
+.steps li::before{content:counter(s);position:absolute;left:18px;top:16px;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--on);display:grid;place-items:center;font:800 17px "Bricolage Grotesque",sans-serif;box-shadow:0 0 18px rgba(40,220,190,.45)}
+.steps b{display:block;color:#fff}
+.cta{background:radial-gradient(700px 300px at 50% 120%,rgba(52,245,160,.3),transparent 70%)}
+.cta .wrap{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+.cta h2{font-size:clamp(30px,4.6vw,48px);max-width:17ch}
+footer{border-top:1px solid var(--line);color:var(--muted);padding:36px 0 calc(36px + env(safe-area-inset-bottom,0px));font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 48px;justify-content:space-between}
+footer a{color:#fff}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:58px;height:58px;border-radius:50%;background:#1FD05F;display:grid;place-items:center;box-shadow:0 0 30px rgba(31,208,95,.7)}
+@media (max-width:820px){nav{display:none}.hero .wrap,.about{grid-template-columns:1fr}section{padding:60px 0}.hero{padding-top:40px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{animation:none}}
+
+.fab{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+.chatbtn{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:10px;padding:0 20px 0 16px;height:58px;border-radius:29px;border:0;cursor:pointer;font:700 16px Figtree,sans-serif;color:var(--on);background:linear-gradient(135deg,var(--gold),var(--gold2));box-shadow:0 0 34px rgba(40,220,190,.6)}
+.chat{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;width:min(390px,calc(100vw - 28px));height:min(580px,calc(100dvh - 40px - env(safe-area-inset-top,0px)));display:flex;flex-direction:column;border-radius:22px;border:1px solid rgba(52,245,160,.45);background:#050707;box-shadow:0 0 60px rgba(52,245,160,.22),0 30px 80px rgba(0,0,0,.9);overflow:hidden}
+.chat[hidden]{display:none}
+.ch{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(52,245,160,.14),transparent)}
+.ch b{font:800 17px "Bricolage Grotesque",sans-serif;margin-right:auto}
+.ch small{display:block;font:400 12px Figtree,sans-serif;color:var(--teal)}
+.ch button{background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;width:40px;height:40px}
+.msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:86%;padding:10px 14px;border-radius:16px;font-size:15.5px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.m.b{background:var(--s2);border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.m.u{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--on);border-bottom-right-radius:4px;align-self:flex-end;font-weight:500}
+.m a{color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 14px 10px}
+.chips button{border:1px solid rgba(52,245,160,.5);background:transparent;color:var(--gold);border-radius:20px;padding:8px 14px;font:500 14px Figtree,sans-serif;cursor:pointer;min-height:38px}
+.cf{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
+.cf input{flex:1;border-radius:24px;padding:12px 16px}
+.cf button{width:48px;height:48px;border-radius:50%;border:0;cursor:pointer;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--on);font-size:20px;font-weight:800}
+.cf button:disabled{opacity:.5;cursor:default}
+
+.dots{display:inline-flex;gap:5px;padding:5px 0}.dots i{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:bl 1.2s infinite}.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes bl{0%,60%,100%{opacity:.25}30%{opacity:1}}
+@media (max-width:900px){.hero .wrap{gap:32px}.ctas .btn{flex:1 1 190px}.tape{margin:0 -40px}}
+@media (max-width:520px){body{font-size:16px}.wrap{padding:0 16px}header .wrap{gap:12px;height:60px}.logo{font-size:17px}.card{padding:20px;border-radius:18px}.card h2{font-size:24px}.grid{grid-template-columns:1fr}.tabs{display:flex}.tabs button{flex:1;padding:10px 6px}.sectors{grid-template-columns:1fr 1fr}.cta .ctas,.cta .btn{width:100%}.facts{gap:6px 16px}
+.chat{right:0;bottom:0;width:100vw;height:100dvh;border-radius:0;border:0;padding-top:env(safe-area-inset-top,0px)}
+.chatbtn{padding:0;width:58px;justify-content:center}.chatbtn .lbl{display:none}}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none}}
+
+.logo{gap:11px}.mark{filter:drop-shadow(0 0 9px rgba(52,245,160,.65));flex:none}
+.lt{display:flex;flex-direction:column;font:800 21px/1 "Bricolage Grotesque",sans-serif;letter-spacing:.06em}
+.lt small{font:600 9.5px Figtree,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+.art{display:block;width:100%;max-width:440px;margin-top:34px;filter:drop-shadow(0 0 26px rgba(52,245,160,.25))}
+@media (max-width:520px){.lt{font-size:18px}.lt small{font-size:8.5px}}
+
+header{transition:transform .3s ease}
+header.hide{transform:translateY(calc(-100% - env(safe-area-inset-top,0px)))}
+@media (prefers-reduced-motion:reduce){header{transition:none}}
+
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(-3%,5%) scale(1.1)}}
+@keyframes shine{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+@keyframes pulse{50%{filter:drop-shadow(0 0 17px rgba(52,245,160,.95))}}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.hero h1,.hero .lead,.hero .ctas,.hero .facts,.hero .card{animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .lead{animation-delay:.12s}.hero .ctas{animation-delay:.24s}.hero .facts{animation-delay:.36s}.hero .card{animation-delay:.3s}
+.hero::before{animation:drift 14s ease-in-out infinite alternate}
+.btn.y{position:relative;overflow:hidden}
+.btn.y::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-130%);animation:shine 4.5s ease-in-out infinite}
+.mark{animation:pulse 3s ease-in-out infinite}
+.chatbtn{animation:bob 3.5s ease-in-out infinite}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.t.rv,.cta h2.rv{opacity:1;transform:none}
+.svc{transition:border-color .2s,box-shadow .2s,transform .25s}
+.svc:hover{transform:translateY(-7px)}
+.sec{transition:transform .25s,box-shadow .25s}.sec:hover{transform:translateY(-5px);box-shadow:0 -10px 34px -14px var(--teal)}
+.ic{transition:transform .3s}.svc:hover .ic{transform:scale(1.14) rotate(-7deg)}
+.steps li{transition:transform .25s,border-color .25s}.steps li:hover{transform:translateX(6px);border-color:var(--gold)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}.rv{opacity:1;transform:none;transition:none}}
+.rv.rv{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+
+@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes spin{to{--ang:360deg}}
+@keyframes wordin{from{opacity:0;transform:translateY(.6em) scale(.96);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes flow{to{background-position:300% 0}}
+@keyframes introOut{0%,55%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+@keyframes introMark{from{transform:scale(.6);opacity:0}40%{opacity:1}to{transform:scale(1.18)}}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.55);opacity:0}}
+@keyframes rip{to{transform:scale(1);opacity:0}}
+.intro{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;pointer-events:none;animation:introOut 1.5s ease forwards}
+.intro .mark{animation:introMark 1.2s ease both}
+.prog{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:3px;z-index:70;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--gold),var(--gold2),var(--teal));box-shadow:0 0 14px var(--gold);pointer-events:none}
+#fx{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero .wrap{z-index:1}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 25%,transparent 75%)}
+.tape-wrap{position:relative;z-index:1}
+.hero h1{animation:none}
+.hero h1 .w{display:inline-block;animation:wordin .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.8s + var(--i)*.11s)}
+.hero h1 .g{background:linear-gradient(90deg,#34F5A0,#1FC8D9,#fff,#A78BFA,#34F5A0);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;animation:wordin .9s cubic-bezier(.2,.7,.2,1) both,flow 6s linear infinite;animation-delay:calc(.8s + var(--i)*.11s),0s}
+.hero .lead{animation-delay:1.0s}.hero .ctas{animation-delay:1.12s}.hero .facts{animation-delay:1.24s}
+.hero .card{animation:up .9s cubic-bezier(.2,.7,.2,1) 1.05s both,spin 7s linear infinite;background:linear-gradient(#050707,#050707) padding-box,conic-gradient(from var(--ang),var(--gold),rgba(52,245,160,0) 25%,var(--teal) 50%,rgba(167,139,250,0) 75%,var(--gold)) border-box}
+.t .w,.cta h2 .w{display:inline-block;transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1),filter .7s;transition-delay:calc(var(--i)*.07s)}
+.t.rv:not(.in) .w,.cta h2.rv:not(.in) .w{opacity:0;transform:translateY(.7em);filter:blur(8px)}
+.btn{position:relative;overflow:hidden}
+.rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);transform:scale(0);animation:rip .65s ease-out forwards;pointer-events:none}
+.svc{background:radial-gradient(240px circle at var(--mx,-300px) var(--my,-300px),rgba(52,245,160,.2),transparent 65%),var(--s1)}
+.sec{background:radial-gradient(240px circle at var(--mx,-300px) var(--my,-300px),rgba(167,139,250,.22),transparent 65%),#000}
+.steps li{background:radial-gradient(240px circle at var(--mx,-300px) var(--my,-300px),rgba(52,245,160,.16),transparent 65%),var(--s1)}
+.chatbtn::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--gold);animation:ring 2.4s ease-out infinite;pointer-events:none}
+footer{box-shadow:0 -1px 50px rgba(52,245,160,.12)}
+@media (prefers-reduced-motion:reduce){.intro,#fx{display:none}.prog{transition:none}}
+
+.hud{position:absolute;left:20px;bottom:92px;z-index:2;pointer-events:none;padding:8px 14px;border-radius:20px;border:1px solid rgba(52,245,160,.4);background:rgba(0,0,0,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:600 13.5px Figtree,sans-serif;color:var(--gold);box-shadow:0 0 22px rgba(52,245,160,.2)}
+.fchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fchips button{border:1px solid var(--line);background:var(--s1);color:var(--ink);border-radius:999px;padding:12px 18px;font:500 15.5px Figtree,sans-serif;cursor:pointer;min-height:46px;transition:border-color .2s,box-shadow .2s,background .2s,transform .2s}
+.fchips button:hover{border-color:var(--gold);transform:translateY(-2px)}
+.fchips button[aria-pressed="true"]{border-color:var(--gold);background:rgba(52,245,160,.13);box-shadow:0 0 24px rgba(52,245,160,.35);color:#fff}
+.rc{margin-top:24px;max-width:640px;display:grid;gap:10px;padding:26px;border-radius:22px;border:1px solid rgba(52,245,160,.45);background:linear-gradient(135deg,rgba(52,245,160,.1),rgba(167,139,250,.09));box-shadow:0 0 50px rgba(52,245,160,.16);animation:up .5s cubic-bezier(.2,.7,.2,1) both}
+.rc .big{font-size:44px;line-height:1}.rc h3{font-size:28px}.rc p{margin:0;color:#BFD0CD}.rc small{color:var(--muted)}.rc .btn{justify-self:start;margin-top:6px}
+.cglow{position:fixed;left:0;top:0;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:2;background:radial-gradient(circle,rgba(52,245,160,.13),transparent 65%);mix-blend-mode:screen;will-change:transform;transform:translate(-999px,-999px)}
+.rev{padding:30px 0 20px;background:transparent}.rev .tape{transform:rotate(1.2deg);background:linear-gradient(90deg,var(--teal),var(--gold))}.rev .track{animation-direction:reverse}
+@media (hover:none){.cglow{display:none}}
+@media (max-width:520px){.hud{left:16px;bottom:88px;font-size:12.5px}}
+@media (prefers-reduced-motion:reduce){.hud,.cglow{display:none}.rc{animation:none}}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.ib{position:absolute;bottom:calc(34px + env(safe-area-inset-bottom,0px));font:600 12px Figtree,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#6B7C7A;animation:fadeIn 1s .35s both}
+.credit{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;border-top:1px solid var(--line);padding-top:24px;margin-top:6px}
+.credit small{display:block;font:500 10.5px Figtree,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#7C8E8C;margin-bottom:3px}
+.credit b{font:800 18px "Bricolage Grotesque",sans-serif;color:#fff;letter-spacing:.01em;display:block;line-height:1.1}
+.cb{display:flex;align-items:center;gap:13px}
+.dm{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#22D3EE,#818CF8);box-shadow:0 0 22px rgba(34,211,238,.5);transition:transform .3s,box-shadow .3s}
+.cb:hover .dm{transform:rotate(-8deg) scale(1.08);box-shadow:0 0 34px rgba(34,211,238,.85)}
+.dv{width:1px;height:34px;background:var(--line)}
+.cc{margin-left:auto;font-size:13px;color:#6F807E}
+.faq{margin-top:30px;display:grid;gap:12px;max-width:820px}
+.faq details{background:var(--s1);border:1px solid var(--line);border-radius:16px;transition:border-color .25s,box-shadow .25s}
+.faq details[open]{border-color:rgba(52,245,160,.5);box-shadow:0 0 34px rgba(52,245,160,.12)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 58px 18px 20px;font:700 18px "Bricolage Grotesque",sans-serif;position:relative;min-height:58px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;margin-top:-15px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(52,245,160,.5);color:var(--gold);font:500 21px/1 Figtree,sans-serif;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details>div{padding:0 20px 18px;color:#B9C7C5;animation:up .35s both}
+.faq p{margin:0}.faq a,footer a{color:var(--gold)}
+.top{position:fixed;left:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:50px;height:50px;border-radius:50%;border:0;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--gold);font:700 20px Figtree,sans-serif;cursor:pointer;display:grid;place-items:center;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 0 22px rgba(52,245,160,.3)}
+.top.show{opacity:1;transform:none;pointer-events:auto}
+.top svg{position:absolute;inset:3px;width:44px;height:44px;transform:rotate(-90deg)}
+.top circle{fill:none;stroke-width:2.5}.rb{stroke:rgba(255,255,255,.14)}.rf{stroke:var(--gold);stroke-linecap:round;stroke-dasharray:119.4;stroke-dashoffset:119.4}
+@media (max-width:640px){.dv{display:none}.cc{margin-left:0;flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.faq details>div{animation:none}}
+
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.qb{padding:5px 12px;border-radius:20px;background:rgba(52,245,160,.12);border:1px solid rgba(52,245,160,.4);color:var(--gold);font:700 12.5px Figtree,sans-serif;letter-spacing:.04em}
+.qs{font-size:13px;color:var(--muted)}
+.qp{display:flex;gap:6px;margin:16px 0 6px}.qp i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.1);transition:background .3s,box-shadow .3s}
+.qp i.on{background:linear-gradient(90deg,var(--gold),var(--gold2));box-shadow:0 0 10px rgba(52,245,160,.6)}
+.vh{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.st{animation:up .35s cubic-bezier(.2,.7,.2,1) both}
+.st h3{font:700 16px "Bricolage Grotesque",sans-serif;margin:16px 0 10px;letter-spacing:0}
+.qc{display:flex;flex-wrap:wrap;gap:8px}
+.qc button{border:1px solid var(--line);background:#000;color:var(--ink);border-radius:999px;padding:10px 15px;font:500 14.5px Figtree,sans-serif;min-height:44px;cursor:pointer;transition:border-color .2s,box-shadow .2s,background .2s,transform .15s}
+.qc button:hover{border-color:var(--gold)}.qc button:active{transform:scale(.96)}
+.qc button[aria-pressed="true"]{border-color:var(--gold);background:rgba(52,245,160,.14);color:#fff;box-shadow:0 0 18px rgba(52,245,160,.35)}
+.qe{margin:12px 0 0;color:#FF8A8A;font-size:14px}.qe.shake{animation:shake .3s}
+.qn{display:flex;gap:10px;margin-top:16px}.card .qn .btn{width:auto;flex:1;margin-top:0}
+.card .qn .ghost{flex:0 0 auto;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+.sum{margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(52,245,160,.07);border:1px solid rgba(52,245,160,.28);font-size:14px;color:#BFD0CD}
+.ok{display:grid;gap:8px;justify-items:center;text-align:center;padding:22px 16px}.ok[hidden]{display:none}
+.ok b{font:800 21px "Bricolage Grotesque",sans-serif;margin:0}.ok span{color:var(--muted);font-size:15px}
+.tick{width:68px;height:68px}.tick circle,.tick path{fill:none;stroke:var(--gold);stroke-linecap:round;stroke-linejoin:round}
+.tick circle{stroke-width:2.5;stroke-dasharray:151;stroke-dashoffset:151;animation:draw .7s ease forwards;filter:drop-shadow(0 0 8px var(--gold))}
+.tick path{stroke-width:3.5;stroke-dasharray:40;stroke-dashoffset:40;animation:draw .45s .55s ease forwards}
+.lnk{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;min-height:40px}
+@media (prefers-reduced-motion:reduce){.tick circle,.tick path{stroke-dashoffset:0}}
+
+.credit{flex-direction:column;align-items:center;justify-content:center;gap:18px;padding-top:30px;margin-top:14px;text-align:center}
+.cp{display:inline-flex;align-items:center;gap:14px;max-width:100%;padding:11px 24px 11px 12px;border-radius:999px;border:1px solid transparent;background:linear-gradient(#04090A,#04090A) padding-box,linear-gradient(120deg,#22D3EE,rgba(129,140,248,.25) 45%,#818CF8) border-box;box-shadow:0 0 36px rgba(34,211,238,.18);text-align:left;transition:box-shadow .3s,transform .3s}
+.cp:hover{box-shadow:0 0 52px rgba(34,211,238,.38);transform:translateY(-2px)}
+.cp .dm{width:46px;height:46px;border-radius:50%;flex:none;position:relative;overflow:hidden}
+.cp .dm::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.7) 50%,transparent 65%);transform:translateX(-130%);animation:shine 4.5s ease-in-out infinite}
+.cp:hover .dm{transform:rotate(-8deg) scale(1.06)}
+.ct{display:block}
+.c1{display:block;font:500 12.5px/1.2 Figtree,sans-serif;color:#8FA3A1}
+.c2{display:block;margin-top:3px;font:800 19px/1.15 "Bricolage Grotesque",sans-serif;color:#fff;letter-spacing:.005em}
+.c2 em{font:500 14px Figtree,sans-serif;font-style:normal;color:#8FA3A1;margin-left:8px}
+.credit .cc{margin:0;font-size:13px;color:#6F807E;flex-basis:auto}
+@media (max-width:420px){.cp{padding-right:18px;gap:12px}.c2{font-size:17px}.c2 em{font-size:13px;margin-left:6px}}
+</style>
+<meta name="author" content="Debasa Web, Debasa Systems">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Jacom Pest Control","description":"Residential and commercial pest control in Mombasa.","telephone":"+254726700306","url":"https://www.jacompestcontrol.co.ke","areaServed":"Mombasa","address":{"@type":"PostalAddress","streetAddress":"Moi Avenue","addressLocality":"Mombasa","addressCountry":"KE"}}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="mk" viewBox="0 0 40 40"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34F5A0"/><stop offset="1" stop-color="#1FC8D9"/></linearGradient></defs><path d="M20 2l15 5.5v11c0 9.5-6.3 16.5-15 19.5C11.3 35 5 28 5 18.5v-11z" fill="url(#lg)"/><path d="M23 11v12.5a4.5 4.5 0 01-4.5 4.5 4.5 4.5 0 01-3.800-2" fill="none" stroke="#04140D" stroke-width="3.4" stroke-linecap="round"/><circle cx="14.5" cy="14" r="1.8" fill="#04140D"/></symbol></defs></svg>
+<div class="intro" aria-hidden="true"><svg class="mark" width="78" height="78"><use href="#mk"/></svg><small class="ib">Website by Debasa Web</small></div>
+<div class="prog" id="prog" aria-hidden="true"></div>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Jacom Pest Control"><svg class="mark" width="38" height="38" aria-hidden="true"><use href="#mk"/></svg><span class="lt">JACOM<small>Pest Control</small></span></a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#finder">Pest finder</a><a href="#serve">Who we serve</a><a href="#about">About</a><a href="#quote">Contact</a></nav>
+  <a class="btn y" href="tel:+254726700306">Call now</a>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <canvas id="fx" aria-hidden="true"></canvas>
+ <div class="hud" aria-live="polite"><span id="hudt">🐞 Tap the bugs to zap them!</span></div>
+ <div class="wrap">
+  <div>
+   <h1>Pest-free spaces for Mombasa.</h1>
+   <p class="lead">We remove termites, bedbugs, cockroaches, mosquitoes, bats and rodents from homes, hotels, warehouses and offices, so you can get back to normal.</p>
+   <div class="ctas">
+    <a class="btn y" href="#quote">Get a free quote</a>
+    <a class="btn o" href="https://wa.me/254726700306" target="_blank" rel="noopener">Chat on WhatsApp</a>
+   </div>
+   <ul class="facts"><li>Homes and businesses</li><li>Moi Avenue, Mombasa</li><li>Free quotes</li></ul>
+  </div>
+  <div class="card" id="quote">
+   <div class="qh"><span class="qb">✓ Free quote</span><span class="qs" id="qs">Step 1 of 3</span></div>
+   <h2>Request a free quote</h2>
+   <p class="sm">Three quick steps. We’ll reply on WhatsApp.</p>
+   <div class="qp" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+   <form id="qf" novalidate>
+    <select id="svc" class="vh" tabindex="-1" aria-hidden="true"></select>
+    <div class="st" data-s="1"><h3>What do you need?</h3><div class="qc" id="qc1" role="group" aria-label="Service"></div></div>
+    <div class="st" data-s="2" hidden><h3>What kind of place?</h3><div class="qc" id="qc2" role="group" aria-label="Property"></div><h3>How soon?</h3><div class="qc" id="qc3" role="group" aria-label="Timing"></div><label for="ar">Area (optional)</label><input id="ar" placeholder="e.g. Nyali, Bamburi, Likoni"></div>
+    <div class="st" data-s="3" hidden><h3>Your details</h3><label for="nm">Name</label><input id="nm" autocomplete="name"><label for="ph">Phone number</label><input id="ph" type="tel" autocomplete="tel" placeholder="07…"><label for="dt">Anything else? (optional)</label><textarea id="dt" placeholder="Where is the problem, and how long has it been going on?"></textarea><div class="sum" id="sum"></div></div>
+    <p class="qe" id="qe" role="alert"></p>
+    <div class="qn"><button type="button" class="btn ghost" id="qback" hidden>Back</button><button type="submit" class="btn y" id="qnext">Continue</button></div>
+   </form>
+   <div class="ok" id="ok" hidden role="status">
+    <svg class="tick" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 14-16"/></svg>
+    <b>Your request is ready</b><span>WhatsApp should open now. If it doesn’t, tap the button below.</span>
+    <a class="btn y" id="wa" href="https://wa.me/254726700306" target="_blank" rel="noopener">Open WhatsApp</a>
+    <button type="button" class="lnk" id="qagain">Send another request</button>
+   </div>
+   <p class="alt">Prefer to talk? Call <a href="tel:+254726700306">+254 726 700 306</a></p>
+  </div>
+ </div>
+ <div class="tape-wrap" aria-hidden="true"><div class="tape"><div class="track" id="track"></div></div></div>
+</div>
+
+<section id="services">
+ <div class="wrap">
+  <h2 class="t">Treatment for every kind of pest</h2>
+  <p class="sub">Choose a service to start your quote.</p>
+  <div class="tabs" role="group" aria-label="Filter services">
+   <button type="button" data-f="all" aria-pressed="true">All</button>
+   <button type="button" data-f="home" aria-pressed="false">Homes</button>
+   <button type="button" data-f="biz" aria-pressed="false">Businesses</button>
+  </div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section id="finder">
+ <div class="wrap">
+  <h2 class="t">Not sure what pest you have?</h2>
+  <p class="sub">Tap what you’re noticing and we’ll point you to the likely cause.</p>
+  <div class="fchips" id="fchips"></div>
+  <div class="fres" id="fres" aria-live="polite"></div>
+ </div>
+</section>
+
+<section class="band" id="serve">
+ <div class="wrap">
+  <h2 class="t">Trusted where hygiene matters</h2>
+  <p class="sub">Commercial clients need discreet, thorough pest control. We work with these sectors.</p>
+  <div class="sectors">
+   <div class="sec">Hotels<small>Guest rooms, kitchens, grounds</small></div>
+   <div class="sec">Logistics and warehousing<small>Stock, loading bays, storage</small></div>
+   <div class="sec">Offices<small>Workspaces and shared areas</small></div>
+   <div class="sec">Healthcare<small>Clinics and care facilities</small></div>
+   <div class="sec">Pharmaceutical<small>Controlled, clean environments</small></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <h2 class="t">Healthy, safe, pest-free</h2>
+   <p class="sub">Jacom Pest Control is a pest management company serving homes and commercial clients across Kenya. Our mission is to create healthy, safe environments by eliminating unwanted pests thoroughly, so they stay gone.</p>
+  </div>
+  <ol class="steps">
+   <li><b>Tell us the problem</b>Call, WhatsApp or send the form above.</li>
+   <li><b>Get your free quote</b>We agree the service and a time that suits you.</li>
+   <li><b>Treatment</b>Our team treats the affected areas thoroughly.</li>
+   <li><b>Pest-free</b>You get your space back, clean and safe.</li>
+  </ol>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <h2 class="t">Questions we hear a lot</h2>
+  <div class="faq">
+   <details><summary>How do I get a quote?</summary><div><p>Use the quote form at the top of this page, or call or WhatsApp <a href="tel:+254726700306">+254 726 700 306</a>. Quotes are free.</p></div></details>
+   <details><summary>Do you work with homes and businesses?</summary><div><p>Yes. We handle residential and commercial pest control, including hotels, warehouses, offices, healthcare and pharmaceutical sites.</p></div></details>
+   <details><summary>Which pests do you deal with?</summary><div><p>Termites, bedbugs, cockroaches, mosquitoes, bats and rodents. Not sure what you have? Try the pest finder above.</p></div></details>
+   <details><summary>How should I prepare before a visit?</summary><div><p>Ask our team for advice that fits your treatment. As a general rule, keep food covered or put away, and tell the technician about children, pets and anyone with health conditions.</p></div></details>
+   <details><summary>How do I stop pests coming back?</summary><div><p>Prevention matters as much as treatment: seal gaps, fix leaks, store food properly and keep waste covered. Ask us about follow-up for your situation.</p></div></details>
+   <details><summary>Where are you based?</summary><div><p>Moi Avenue, Mombasa, Kenya. <a href="https://www.google.com/maps/search/?api=1&amp;query=Moi+Avenue+Mombasa+Kenya" target="_blank" rel="noopener">Get directions</a></p></div></details>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap">
+  <h2>Seen a pest? Don’t wait for it to spread.</h2>
+  <div class="ctas"><a class="btn y" href="tel:+254726700306">Call +254 726 700 306</a><a class="btn o" href="https://wa.me/254726700306" target="_blank" rel="noopener">WhatsApp us</a></div>
+ </div>
+</section>
+<div class="tape-wrap rev" aria-hidden="true"><div class="tape"><div class="track" id="track2"></div></div></div>
+</main>
+<button class="top" id="top2" type="button" aria-label="Back to top"><svg viewBox="0 0 44 44" aria-hidden="true"><circle class="rb" cx="22" cy="22" r="19"/><circle class="rf" id="rf" cx="22" cy="22" r="19"/></svg><span aria-hidden="true">&uarr;</span></button>
+<div class="cglow" id="cg" aria-hidden="true"></div>
+
+<footer>
+ <div class="wrap">
+  <div><a class="logo" style="margin-bottom:10px" href="#top" aria-label="Jacom Pest Control"><svg class="mark" width="38" height="38" aria-hidden="true"><use href="#mk"/></svg><span class="lt">JACOM<small>Pest Control</small></span></a><br>Moi Avenue, Mombasa, Kenya<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Moi+Avenue+Mombasa+Kenya" target="_blank" rel="noopener">Get directions &rarr;</a></div>
+  <div>Phone: <a href="tel:+254726700306">+254 726 700 306</a><br>Web: <a href="https://www.jacompestcontrol.co.ke" target="_blank" rel="noopener">jacompestcontrol.co.ke</a></div>
+ <div class="credit">
+   <div class="cp">
+    <span class="dm" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#03121A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span>
+    <span class="ct"><span class="c1">Designed &amp; developed by</span><span class="c2">Debasa Web<em>&middot; Debasa Systems</em></span></span>
+   </div>
+   <p class="cc">&copy; 2026 Jacom Pest Control. All rights reserved.</p>
+  </div>
+ </div>
+</footer>
+
+<a class="fab" href="https://wa.me/254726700306" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-12.4 7.400L3 20.5l1.700-5.3A8.4 8.4 0 1121 11.5z"/></svg></a>
+
+
+<button class="chatbtn" id="chatbtn" type="button" aria-controls="chat"><span aria-hidden="true">💬</span><span class="lbl">Ask us</span></button>
+<div class="chat" id="chat" hidden role="dialog" aria-label="Customer service chat">
+ <div class="ch"><div style="margin-right:auto"><b>Jacom assistant</b><small>AI customer service</small></div><button type="button" id="chatx" aria-label="Close chat">×</button></div>
+ <div class="msgs" id="msgs" aria-live="polite"></div>
+ <div class="chips" id="chips"></div>
+ <form class="cf" id="cf"><input id="ci" placeholder="Type your question…" autocomplete="off" aria-label="Your message"><button type="submit" id="cs" aria-label="Send">➤</button></form>
+</div>
+
+<script>
+var S=[
+["🏠","Residential pest control","Safe treatment for your home, flat or compound.","home"],
+["🏢","Commercial pest control","Scheduled programmes for hotels, offices and warehouses.","biz"],
+["🐜","Termite control","Stop damage to floors, roofs and furniture.","all"],
+["🛏️","Bedbug control","Clear infestations from beds, sofas and rooms.","all"],
+["🪳","Cockroach control","Kitchens, drains and storage areas treated.","all"],
+["🦟","Mosquito control","Fewer bites around homes, gardens and venues.","all"],
+["🦇","Bat control","Humane removal from roofs and ceilings.","all"],
+["🐀","Rodent control","Rats and mice dealt with at the source.","all"]
+];
+var $=function(i){return document.getElementById(i)},g=$("grid"),sel=$("svc");
+var w=["Termites","Bedbugs","Cockroaches","Mosquitoes","Bats","Rodents"],h="";
+for(var i=0;i<2;i++)w.forEach(function(x){h+="<span>"+x+"</span>"});
+$("track").innerHTML=h+h;
+function show(f){
+ g.innerHTML="";
+ S.forEach(function(s){
+  if((f==="home"&&s[3]==="biz")||(f==="biz"&&s[3]==="home"))return;
+  var b=document.createElement("button");b.type="button";b.className="svc";
+  b.innerHTML='<span class="ic" aria-hidden="true">'+s[0]+'</span><h3>'+s[1]+'</h3><p>'+s[2]+'</p><b>Get a quote</b>';
+  b.onclick=function(){sel.value=s[1];if(window.syncSvc)syncSvc();$("quote").scrollIntoView({behavior:"smooth",block:"center"});setTimeout(function(){$("nm").focus({preventScroll:true})},600)};
+  g.appendChild(b);
+ });
+ rv(g.children);
+}
+S.forEach(function(s){var o=document.createElement("option");o.textContent=s[1];sel.appendChild(o)});
+["Other or general enquiry","Large contract"].forEach(function(t){var o=document.createElement("option");o.textContent=t;sel.appendChild(o)});
+show("all");
+document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){
+ document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});show(b.dataset.f)}});
+
+
+(function(){
+var RULES=["You are the friendly customer service assistant for Jacom Pest Control, a pest control company on Moi Avenue, Mombasa, Kenya.",
+"Facts you may use: services are residential pest control, commercial pest control, and termite, bedbug, cockroach, mosquito, bat and rodent control. Commercial clients include hotels, logistics and warehousing, offices, healthcare and pharmaceutical. Quotes are free. Phone and WhatsApp: +254 726 700 306. Website: jacompestcontrol.co.ke.",
+"Rules: Reply in the customer’s language (English or Swahili). Keep replies under 70 words, plain text, no markdown. Never invent prices, discounts, opening hours, guarantees, chemicals or response times; say the team will confirm. For prices, bookings or inspections, find out which pest, where in Mombasa, and home or business, then point them to the quote form on this page, a phone call, or WhatsApp. You may give short, safe, general tips (cover food, seal gaps, remove standing water). Never claim to be human. If asked about something unrelated, politely steer back to pest control."].join("\n\n");
+var $=function(i){return document.getElementById(i)},box=$("chat"),msgs=$("msgs"),inp=$("ci"),btn=$("cs"),turns=[],busy=false,sample,ctl;
+function add(c,t){var d=document.createElement("div");d.className="m "+c;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+function fallback(t){var d=add("b",t+"\n");[["Call +254 726 700 306","tel:+254726700306"],["WhatsApp","https://wa.me/254726700306"]].forEach(function(l,i){var a=document.createElement("a");a.href=l[1];a.textContent=l[0];if(i)a.target="_blank",a.rel="noopener";d.appendChild(a);if(!i)d.appendChild(document.createTextNode("  ·  "))})}
+function chips(){var c=$("chips");c.innerHTML="";["What do you treat?","I need a free quote","I have cockroaches"].forEach(function(q){var b=document.createElement("button");b.type="button";b.textContent=q;b.onclick=function(){send(q)};c.appendChild(b)})}
+add("b","Hi! I’m Jacom’s AI assistant. Ask about our services, or tell me which pest is bothering you.");chips();
+function open(){box.hidden=false;$("chatbtn").hidden=true;setTimeout(function(){inp.focus()},50)}
+$("chatbtn").onclick=open;$("chatx").onclick=function(){box.hidden=true;$("chatbtn").hidden=false};
+function quick(t){t=t.toLowerCase();
+ if(/what do you treat|services|huduma/.test(t))return "We treat termites, bedbugs, cockroaches, mosquitoes, bats and rodents, for homes and businesses (hotels, warehouses, offices, healthcare and pharmaceutical). Which pest is bothering you?";
+ if(/quote|price|cost|bei/.test(t))return "Quotes are free. Use the quote form at the top of this page, or call or WhatsApp +254 726 700 306 with the pest and your area in Mombasa. The team will confirm the price.";
+ if(/where|location|address|wapi/.test(t))return "We’re on Moi Avenue, Mombasa. Call or WhatsApp +254 726 700 306 and we’ll confirm directions.";
+ if(/phone|call|number|whatsapp|contact/.test(t))return "You can call or WhatsApp us on +254 726 700 306.";
+ return null}
+async function send(text){
+ text=(text||"").trim();if(!text||busy)return;
+ var qa=text.length<45&&quick(text);
+ if(qa){$("chips").innerHTML="";inp.value="";add("u",text);add("b",qa);turns.push({role:"user",content:text},{role:"assistant",content:qa});return}
+ busy=true;btn.textContent="■";btn.setAttribute("aria-label","Stop");inp.value="";$("chips").innerHTML="";
+ add("u",text);turns.push({role:"user",content:text});
+ var bub=add("b","");bub.innerHTML='<span class="dots"><i></i><i></i><i></i></span>';
+ try{
+  if(sample===undefined)sample=window.claude?await window.claude.use("sample"):null;
+  if(!sample){bub.remove();fallback("The assistant isn’t available here right now. You can reach us directly:");turns.pop();return}
+  var r=await sample([{role:"user",content:RULES}].concat(turns.slice(-8)),{cache:false,modelTier:"quick",signal:(ctl=new AbortController()).signal,onText:function(o){bub.textContent=o.text;msgs.scrollTop=msgs.scrollHeight}});
+  bub.textContent=r.text;turns.push({role:"assistant",content:r.text});
+ }catch(e){
+  var c=e&&e.code;
+  if(c==="cancelled"&&e.text){bub.textContent=e.text;turns.push({role:"assistant",content:e.text})}else{turns.pop();bub.remove()}
+  if(c==="cancelled"){}else if(c==="not_granted"||c==="sampling_disabled"||c==="capability_disabled"||c==="not_declared")fallback("The assistant isn’t switched on for this view. You can reach us directly:");
+  else if(c==="rate_limited")fallback("Too many messages for now. Please wait a moment, or reach us directly:");
+  else fallback("Sorry, something went wrong. Please try again, or reach us directly:");
+ }finally{busy=false;btn.textContent="➤";btn.setAttribute("aria-label","Send");msgs.scrollTop=msgs.scrollHeight}
+}
+$("cf").addEventListener("submit",function(e){e.preventDefault();if(busy){if(ctl)ctl.abort();return}send(inp.value)});
+})();
+
+(function(){var h=document.querySelector("header"),y=window.scrollY||0,t=false;
+window.addEventListener("scroll",function(){if(t)return;t=true;requestAnimationFrame(function(){var c=window.scrollY||0;
+ if(c>y+2&&c>90)h.classList.add("hide");else if(c<y-2||c<=90)h.classList.remove("hide");y=c;t=false})},{passive:true});
+h.addEventListener("focusin",function(){h.classList.remove("hide")})})();
+
+var RO;
+function rv(list){
+ if((window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)||!("IntersectionObserver" in window))return;
+ if(!RO)RO=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;RO.unobserve(el);el.classList.add("in");setTimeout(function(){el.classList.remove("rv","in");el.style.removeProperty("--d")},1300)}})},{threshold:.12});
+ Array.prototype.forEach.call(list,function(el){var k=Array.prototype.indexOf.call(el.parentNode.children,el);el.classList.add("rv");el.style.setProperty("--d",(Math.min(k,6)*.08)+"s");RO.observe(el)})
+}
+rv(document.querySelectorAll(".t,.sub,.tabs,.sec,.steps li,.cta h2,.cta .ctas"));
+
+(function(){
+ var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+ function words(el,gi){var i=0;el.innerHTML=el.textContent.split(" ").map(function(w){return '<span class="w'+(gi&&gi.test(w)?" g":"")+'" style="--i:'+(i++)+'">'+w+"</span>"}).join(" ")}
+ document.querySelectorAll(".hero h1,.t,.cta h2").forEach(function(el){words(el,el.matches(".hero h1")?/Mombasa/:null)});
+ var pr=document.getElementById("prog"),tk=false;
+ function f(){tk=false;var m=document.documentElement.scrollHeight-innerHeight,y=window.scrollY||0,q=m>0?Math.min(1,y/m):0;pr.style.transform="scaleX("+q+")";var rf=document.getElementById("rf"),tp=document.getElementById("top2");if(rf)rf.style.strokeDashoffset=119.4*(1-q);if(tp)tp.classList.toggle("show",y>500)}
+ addEventListener("scroll",function(){if(!tk){tk=true;requestAnimationFrame(f)}},{passive:true});f();
+ var sp=".svc,.sec,.steps li";
+ document.addEventListener("pointermove",function(e){var t=e.target.closest&&e.target.closest(sp);if(t){var r=t.getBoundingClientRect();t.style.setProperty("--mx",(e.clientX-r.left)+"px");t.style.setProperty("--my",(e.clientY-r.top)+"px");if(e.pointerType==="mouse"&&t.classList.contains("svc")){var rx=((e.clientY-r.top)/r.height-.5)*-8,ry=((e.clientX-r.left)/r.width-.5)*8;t.style.transform="perspective(700px) rotateX("+rx+"deg) rotateY("+ry+"deg) translateY(-7px)"}}},{passive:true});
+ document.addEventListener("pointerout",function(e){var t=e.target.closest&&e.target.closest(sp);if(t&&!t.contains(e.relatedTarget)){t.style.removeProperty("--mx");t.style.removeProperty("--my");t.style.transform=""}});
+ document.addEventListener("pointerdown",function(e){var b=e.target.closest&&e.target.closest(".btn");if(!b)return;var r=b.getBoundingClientRect(),s=document.createElement("span"),d=Math.max(r.width,r.height)*2;s.className="rip";s.style.cssText="width:"+d+"px;height:"+d+"px;left:"+(e.clientX-r.left-d/2)+"px;top:"+(e.clientY-r.top-d/2)+"px";b.appendChild(s);setTimeout(function(){s.remove()},700)});
+ var cv=document.getElementById("fx");if(!cv||reduce||!cv.getContext)return;
+ var h=cv.parentNode,x=cv.getContext("2d"),B=[],K=[],W,H,run=true,on=false,px=-999,py=-999,zc=0,D=Math.min(window.devicePixelRatio||1,2),hud=document.getElementById("hudt");
+ function mk(e){return{x:e?(Math.random()<.5?-10:W+10):Math.random()*W,y:Math.random()*H,a:Math.random()*6.283,sp:Math.random()*.6+.5,s:Math.random()*1.3+2.6,ph:Math.random()*9}}
+ function size(){W=h.clientWidth;H=h.clientHeight;cv.width=W*D;cv.height=H*D;cv.style.width=W+"px";cv.style.height=H+"px";x.setTransform(D,0,0,D,0,0);var n=Math.max(10,Math.min(26,Math.round(W*H/32000)));B=[];for(var i=0;i<n;i++)B.push(mk(0))}
+ function draw(b){x.save();x.translate(b.x,b.y);x.rotate(b.a);var s=b.s;x.fillStyle="rgba(130,255,205,.95)";x.beginPath();x.ellipse(0,0,s*1.6,s,0,0,6.283);x.fill();x.beginPath();x.arc(s*1.9,0,s*.62,0,6.283);x.fill();
+  x.strokeStyle="rgba(130,255,205,.65)";x.lineWidth=1;x.beginPath();
+  for(var k=-1;k<=1;k++)for(var m=-1;m<=1;m+=2){var w=Math.sin(b.ph+k*2.1+m)*s*.7;x.moveTo(k*s*.9,0);x.lineTo(k*s*.9+w,m*s*2.1)}
+  x.moveTo(s*2.2,0);x.lineTo(s*3.6,-s*.9);x.moveTo(s*2.2,0);x.lineTo(s*3.6,s*.9);x.stroke();x.restore()}
+ h.addEventListener("pointermove",function(e){var r=h.getBoundingClientRect();px=e.clientX-r.left;py=e.clientY-r.top});
+ h.addEventListener("pointerleave",function(){px=py=-999});
+ h.addEventListener("pointerdown",function(e){
+  if(e.target.closest("a,button,input,select,textarea,label"))return;
+  var r=h.getBoundingClientRect(),cx=e.clientX-r.left,cy=e.clientY-r.top,best=-1,bd=1700;
+  B.forEach(function(b,i){var d=(b.x-cx)*(b.x-cx)+(b.y-cy)*(b.y-cy);if(d<bd){bd=d;best=i}});
+  if(best<0)return;var b=B[best];
+  for(var k=0;k<14;k++){var an=Math.random()*6.283,v=Math.random()*3+1;K.push({x:b.x,y:b.y,vx:Math.cos(an)*v,vy:Math.sin(an)*v,l:1})}
+  B[best]=mk(1);zc++;hud.textContent=zc>=10?"🎯 Nice aim! For real pests, get a free quote ↓":"🐞 Zapped: "+zc});
+ function loop(){if(!run){on=false;return}x.clearRect(0,0,W,H);x.shadowColor="rgba(52,245,160,.9)";x.shadowBlur=9;
+  B.forEach(function(b){var dx=b.x-px,dy=b.y-py,d=Math.sqrt(dx*dx+dy*dy),v=b.sp;
+   if(d<95){var t=Math.atan2(dy,dx),df=Math.atan2(Math.sin(t-b.a),Math.cos(t-b.a));b.a+=df*.22;v=b.sp*(1+(95-d)/48)}else b.a+=(Math.random()-.5)*.3;
+   b.x+=Math.cos(b.a)*v;b.y+=Math.sin(b.a)*v;b.ph+=v*.6;
+   if(b.x<-20||b.x>W+20||b.y<-20||b.y>H+20)b.a=Math.atan2(H/2-b.y,W/2-b.x)+(Math.random()-.5);
+   draw(b)});
+  x.shadowBlur=0;
+  for(var i=K.length-1;i>=0;i--){var k=K[i];k.x+=k.vx;k.y+=k.vy;k.vx*=.94;k.vy*=.94;k.l-=.035;if(k.l<=0){K.splice(i,1);continue}x.strokeStyle="rgba(167,139,250,"+k.l+")";x.lineWidth=2;x.beginPath();x.moveTo(k.x,k.y);x.lineTo(k.x-k.vx*2,k.y-k.vy*2);x.stroke()}
+  requestAnimationFrame(loop)}
+ size();addEventListener("resize",size);
+ new IntersectionObserver(function(e){run=e[0].isIntersecting;if(run&&!on){on=true;loop()}}).observe(h);
+ on=true;loop();
+})();
+
+(function(){
+ var w=["Homes","Hotels","Warehouses","Offices","Healthcare","Pharmaceutical"],t="";
+ for(var i=0;i<4;i++)w.forEach(function(x){t+="<span>"+x+"</span>"});
+ document.getElementById("track2").innerHTML=t;
+ var F=[
+["🪵","Wood dust or hollow wood","Termites","Termite control","Fine wood dust, mud tubes or hollow-sounding wood are common signs of termites."],
+["🛏️","Itchy bites or spots on bedding","Bedbugs","Bedbug control","Bites in a line and tiny dark or blood spots on mattresses and sheets often point to bedbugs."],
+["🪳","Bugs in the kitchen at night","Cockroaches","Cockroach control","Cockroaches come out in the dark and hide near drains, cupboards and warm appliances."],
+["🐀","Droppings or gnaw marks","Rodents","Rodent control","Small droppings, gnawed wires or packaging and scratching sounds suggest rats or mice."],
+["🦇","Noises or droppings in the roof","Bats or rodents","Bat control","Sounds in the ceiling at dusk or dawn, and droppings below the roofline, can mean bats."],
+["🦟","Lots of bites outdoors or at dusk","Mosquitoes","Mosquito control","Mosquitoes breed in standing water, so treatment and removing breeding spots both help."]
+];
+ var c=document.getElementById("fchips"),r=document.getElementById("fres");
+ F.forEach(function(f,n){var b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed","false");b.textContent=f[0]+"  "+f[1];
+  b.onclick=function(){c.querySelectorAll("button").forEach(function(o){o.setAttribute("aria-pressed",o===b)});
+   r.innerHTML='<div class="rc"><span class="big" aria-hidden="true">'+f[0]+'</span><small>Likely cause</small><h3>'+f[2]+'</h3><p>'+f[4]+'</p><small>Only an inspection can confirm. We can check it for you.</small><button class="btn y" type="button">Get a quote for '+f[3].toLowerCase()+'</button></div>';
+   r.querySelector(".btn").onclick=function(){sel.value=f[3];if(window.syncSvc)syncSvc();document.getElementById("quote").scrollIntoView({behavior:"smooth",block:"center"})}};
+  c.appendChild(b)});
+ var cg=document.getElementById("cg");
+ document.addEventListener("pointermove",function(e){if(e.pointerType==="mouse")cg.style.transform="translate("+(e.clientX-260)+"px,"+(e.clientY-260)+"px)"},{passive:true});
+ if(typeof rv==="function")rv(document.querySelectorAll("#finder .sub,#finder .fchips"));
+})();
+
+(function(){
+ document.getElementById("top2").onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
+ if(typeof rv==="function")rv(document.querySelectorAll(".faq details"));
+})();
+
+(function(){
+ var q=function(i){return document.getElementById(i)},step=1,D={prop:"",urg:""},icons={};
+ S.forEach(function(x){icons[x[1]]=x[0]});icons["Other or general enquiry"]="💬";icons["Large contract"]="📋";
+ function lab(t){return t==="Other or general enquiry"?"Something else":t.replace(/ pest control$| control$/,"")}
+ function mark(id,v){q(id).querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.v===v)})}
+ function home(){if(sel.value==="Residential pest control"&&!D.prop){D.prop="Home";mark("qc2","Home")}}
+ Array.prototype.forEach.call(sel.options,function(o){var b=document.createElement("button");b.type="button";b.dataset.v=o.value;b.setAttribute("aria-pressed","false");b.textContent=(icons[o.value]||"")+"  "+lab(o.value);b.onclick=function(){sel.value=o.value;mark("qc1",o.value);home();q("qe").textContent=""};q("qc1").appendChild(b)});
+ sel.selectedIndex=-1;
+ function pick(id,list,key){list.forEach(function(v){var b=document.createElement("button");b.type="button";b.dataset.v=v;b.textContent=v;b.setAttribute("aria-pressed","false");b.onclick=function(){D[key]=v;mark(id,v)};q(id).appendChild(b)})}
+ pick("qc2",["Home","Hotel","Warehouse","Office","Healthcare","Other"],"prop");
+ pick("qc3",["As soon as possible","This week","Just planning"],"urg");
+ var sts=document.querySelectorAll(".st"),dots=document.querySelectorAll(".qp i"),nx=q("qnext"),bk=q("qback"),er=q("qe");
+ function show(n){step=n;sts.forEach(function(e){e.hidden=+e.dataset.s!==n;if(!e.hidden){e.style.animation="none";void e.offsetWidth;e.style.animation=""}});
+  dots.forEach(function(d,i){d.classList.toggle("on",i<n)});q("qs").textContent="Step "+n+" of 3";bk.hidden=n===1;nx.textContent=n===3?"Send on WhatsApp":"Continue";er.textContent="";
+  if(n===3)q("sum").textContent=[(icons[sel.value]||"")+" "+sel.value,D.prop,q("ar").value.trim(),D.urg].filter(Boolean).join("  ·  ")}
+ window.syncSvc=function(){mark("qc1",sel.value);home();if(step===1&&sel.value)show(2)};
+ function err(m){er.textContent=m;er.classList.remove("shake");void er.offsetWidth;er.classList.add("shake")}
+ bk.onclick=function(){show(step-1)};
+ q("qf").addEventListener("submit",function(e){e.preventDefault();
+  if(step===1){if(!sel.value)return err("Please choose what you need.");return show(2)}
+  if(step===2)return show(3);
+  var nm=q("nm").value.trim(),ph=q("ph").value.trim();
+  if(!nm||ph.replace(/\D/g,"").length<7)return err("Please enter your name and a valid phone number.");
+  var ar=q("ar").value.trim(),d=q("dt").value.trim();
+  var m="Hello Jacom Pest Control, I’d like a free quote.\nService: "+sel.value+(D.prop?"\nProperty: "+D.prop:"")+(ar?"\nArea: "+ar:"")+(D.urg?"\nTiming: "+D.urg:"")+"\nName: "+nm+"\nPhone: "+ph+(d?"\nDetails: "+d:"");
+  var u="https://wa.me/254726700306?text="+encodeURIComponent(m);
+  q("wa").href=u;q("qf").hidden=true;q("ok").hidden=false;q("qs").textContent="Done";dots.forEach(function(x){x.classList.add("on")});
+  try{window.open(u,"_blank")}catch(x){}
+ });
+ q("qagain").onclick=function(){q("ok").hidden=true;q("qf").hidden=false;q("qf").reset();sel.selectedIndex=-1;D={prop:"",urg:""};["qc1","qc2","qc3"].forEach(function(i){mark(i,"")});show(1)};
+ show(1);
+})();
+</script>
+</body>
+</html>
